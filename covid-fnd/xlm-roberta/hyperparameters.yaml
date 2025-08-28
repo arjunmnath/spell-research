@@ -1,0 +1,9 @@
+batch_size: 32
+epochs: 4
+lr: 3e-5 (with linear Scheduling and warmup)
+optimiser: adamw
+embedding: xlm-roberta
+accelerator: 2x T4 GPU
+token_len: 256
+embedding_pooling: mean max pool + [cls] token
+
